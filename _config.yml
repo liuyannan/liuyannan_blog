@@ -6,14 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Yannan Liu 
-email: ynliu@cse.cuhk.edu.hk
+title: Yannan Liu
+email: lyn240690234@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   This is my personal homepage. 
+   This is my personal homepage.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://lyn240690234.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+timezone: Asia/Hong_Kong
