@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "I don't know who said these."
-date:   2011-11-01 22:36:34
+date:   2011-11-01 22:36:34 +08:00
 categories: Luke Nonsense
 tags: Luke Nonsense
 ---
