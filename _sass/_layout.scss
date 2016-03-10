@@ -240,3 +240,17 @@
         }
     }
 }
+.left-panel{
+  position: fixed;
+  width: 240px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  padding-bottom: 4em;
+  color: #FFF;
+  background: #000000;
+}
+.right-content{
+  margin-left: 240px;
+}
