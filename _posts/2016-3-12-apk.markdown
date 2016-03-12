@@ -5,7 +5,7 @@ categories: Android apktool jarsigner keytool
 tags: Android apktool jarsigner keytool
 ---
 
-Tools we needed are apktool, jarsigner, and keytool. The apktool can be downloaded from [site](http://ibotpeaches.github.io/Apktool)
+Tools we needed are apktool, jarsigner, and keytool. The apktool can be downloaded from [site](http://ibotpeaches.github.io/Apktool).
 
 1. To decode an existing apk file, we use command below. _old.apk_ refers to the name of apk file to be decoded. _\<dir\>_ gives the directory for generated files during disassembling.
 
@@ -24,4 +24,4 @@ Tools we needed are apktool, jarsigner, and keytool. The apktool can be download
     **The parameters after -keystore and -alias in keytool command must be the same.**
 
 Details for keytool command can be find in next figure.
-![image](/_figures/keytool.png)
+![image]({{ site.url }}/_figures/keytool.png)
