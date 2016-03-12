@@ -1,0 +1,27 @@
+---
+layout: page
+title:  "Steps to decode, encode and sign Android apk."
+categories: Android apktool jarsigner keytool
+tags: Android apktool jarsigner keytool
+---
+
+Tools we needed are apktool, jarsigner, and keytool. The apktool can be downloaded from [site](http://ibotpeaches.github.io/Apktool)
+
+1. To decode an existing apk file, we use command below. _old.apk_ refers to the name of apk file to be decoded. _\<dir\>_ gives the directory for generated files during disassembling.
+
+        apktool d old.apk <dir>
+
+2. We can modify the content in the _\<dir\>_  accordingly. Then we generated new apk file with command below. Then the new apk file is in _\<dir\>/dist/_.
+
+        apktool d <dir>
+
+3. The new apk file cannot be installed on phone or simulator now. We need to sign the new apk file before installation. We first need to generate a keystore file for sign, e.g. **bxp.keystore**. Then we sign new apk file with **bxp.keystore**.
+    ```
+    keytool -genkey -keystore bxp.keystore -keyalg RSA 10000 -alias bxp.keystore
+
+    jarsigner -verbose -keystore bxp.keystore -signedjar <path to apk file after signed> <path to apk file to be signed> bxp.keystore
+    ```      
+    **The parameters after -keystore and -alias in keytool command must be the same.**
+
+Details for keytool command can be find in next figure.
+![image](/_figures/keytool.png)
