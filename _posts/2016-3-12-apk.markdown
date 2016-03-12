@@ -16,11 +16,11 @@ Tools we needed are apktool, jarsigner, and keytool. The apktool can be download
         apktool d <dir>
 
 3. The new apk file cannot be installed on phone or simulator now. We need to sign the new apk file before installation. We first need to generate a keystore file for sign, e.g. **bxp.keystore**. Then we sign new apk file with **bxp.keystore**.
-    ```
-    keytool -genkey -keystore bxp.keystore -keyalg RSA 10000 -alias bxp.keystore
 
-    jarsigner -verbose -keystore bxp.keystore -signedjar <path to apk file after signed> <path to apk file to be signed> bxp.keystore
-    ```      
+        keytool -genkey -keystore bxp.keystore -keyalg RSA 10000 -alias bxp.keystore
+
+        jarsigner -verbose -keystore bxp.keystore -signedjar <path to apk file after signed> <path to apk file to be signed> bxp.keystore
+
     **The parameters after -keystore and -alias in keytool command must be the same.**
 
 Details for keytool command can be find in next figure.
