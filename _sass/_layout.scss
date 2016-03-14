@@ -152,8 +152,8 @@
 
 .footer-col-3 {
     text-align: right;
-    width: -webkit-calc(33.5% - (#{$spacing-unit} / 2));
-    width:         calc(33.5% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+    width:         calc(33% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
