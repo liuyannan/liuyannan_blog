@@ -23,6 +23,6 @@ Tools we needed are apktool, jarsigner, and keytool. The apktool can be download
 
     **The parameters after -keystore and -alias in keytool command must be the same.**
 
-Details for keytool command can be find in next figure.
+Details for keytool command can be found in next figure.
 
 ![image]({{ site.url }}/figures/keytool.png)
