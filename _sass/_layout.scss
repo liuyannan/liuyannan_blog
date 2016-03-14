@@ -13,7 +13,7 @@
 .site-title {
     font-size: 26px;
     font-weight: 300;
-    line-height: 56px;
+    //line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -27,7 +27,7 @@
 .site-subtitle {
     font-size: 18px;
     font-weight: 300;
-    //line-height: px;
+    line-height: 110%;
     letter-spacing: -1px;
     margin-bottom: 0;
     //margin-left: 18px;
@@ -38,7 +38,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    //line-height: 56px;
 
     .menu-icon {
         display: none;
