@@ -1,0 +1,36 @@
+---
+layout: page
+title:  "Relearn C++11"
+categories: C++
+tags: C++
+---
+I knew C++ standard had been revised several times. But I didn't pay attention to such changes. Recently, I found there were many interesting features introduced. This post would record the interesting features I met.
+
+1. Since 11 standard, thread operation is natively supported by C++.
+
+    ````cpp
+    int main(){
+    //Create a new thread. func is a general function implemented elsewhere.
+    std::thread th(func);
+
+    //Wait for th
+    th.join();
+
+    return 0;
+    }
+    ````
+
+2. Range based for loop. This feature simply the for loop condition.
+    ````cpp
+    std::vector<int> array[10];
+    .....
+
+    //Below loop would increase every element in array by 1.
+    /* auto would deduct the type of i automatically.
+     * & is for reference.
+     * : tells enumerate all elements in array.
+     */
+    for(auto & i : array){
+      i++;
+    }
+    ````
