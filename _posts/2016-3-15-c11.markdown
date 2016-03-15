@@ -6,10 +6,10 @@ tags: C++
 ---
 I knew C++ standard had been revised several times. But I didn't pay attention to such changes. Recently, I found there were many interesting features introduced. This post would record the interesting features I met.
 
-1. Since 11 standard, thread operation is natively supported by C++.
+1) Since 11 standard, thread operation is natively supported by C++.
 
-    ````cpp
-    int main(){
+```cpp
+int main(){
     //Create a new thread. func is a general function implemented elsewhere.
     std::thread th(func);
 
@@ -17,12 +17,13 @@ I knew C++ standard had been revised several times. But I didn't pay attention t
     th.join();
 
     return 0;
-    }
-    ````
+}
+```
 
-2. Range based for loop. This feature simply the for loop condition.
-    ````cpp
-    std::vector<int> array[10];
+2) Range based for loop. This feature simply the for loop condition.
+
+```cpp
+std::vector<int> array[10];
     .....
 
     //Below loop would increase every element in array by 1.
@@ -32,5 +33,5 @@ I knew C++ standard had been revised several times. But I didn't pay attention t
      */
     for(auto & i : array){
       i++;
-    }
-    ````
+}
+```

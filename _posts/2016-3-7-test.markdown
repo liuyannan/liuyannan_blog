@@ -24,3 +24,5 @@ To display code block in markdown, I found there were two different methods. Fir
 ```
 ````
 .
+
+**By the way, it seems such code block method doesn't nest code block well, e.g. representing code under list item.** 
