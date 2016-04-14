@@ -8,7 +8,7 @@ date:   2016-04-14 11:54:00 +08:00
 
 Recently, I am studying deaplearning and learned Theaon a good tool for Neural Network implementation. However, there are some difficulties in making Thearon work on windows.
 
-#Theano
+# Theano
 
 [Theano](http://deeplearning.net/software/theano/index.html) is a python library to evaluate computation graph (i.e. expression) efficiently. I think the most important thing is that, it can calculate the gradient automatically, which make it suitable for Neural Network implementation.
 
@@ -16,13 +16,14 @@ Theano can speed up the computing by transforming python code into C/C++ code, e
 
 *You can use Theano without g++ compiler. In that case, the computation is done natively with python, and the speed is horrible.*
 
-#System Configuration
+# System Configuration
 
 CPU: Intel Xeon E5-1620  
 GPU: Quadro K600   
 Python: 2.7 32-bit  
 OS: Windows 7 64-bit
-#Procedure
+
+# Procedure
 
 I mainly followed the official tutorial [here](http://deeplearning.net/software/theano/install_windows.html). But two problems occurred during installation, and I solved as follows.
 
@@ -31,6 +32,7 @@ First, when I install the CUDA 5.5 on my computer. The driver installer said no 
 *NOTE: At the point I posted this blog, I haven finished testing the CUDA function. So CUDA maybe not fully workable.*
 
 Second, when I test the Theano with an example NN. It reported the following error,
+
 ```
 C:\Python27\libs/libpython27.a(dmmes00245.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_li
 bpython27_a'
@@ -59,6 +61,7 @@ I found this was because the libpython27.a containing certain problem, as said [
 > This trick should work for all Python versions, including future releases of Python. You can also use this trick to convert other libraries.
 
 But, the dlltoll in the fourth step reports a syntax error in my case,
+
 ```
 C:\TDM-GCC-32\bin\dlltool.exe: Syntax error in def file ./python27.def:0
 ```
