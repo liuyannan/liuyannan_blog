@@ -31,7 +31,7 @@ First, when I install the CUDA 5.5 on my computer. The driver installer said no 
 
 *NOTE: At the point I posted this blog, I haven finished testing the CUDA function. So CUDA maybe not fully workable.*
 
-Second, when I test the Theano with an example NN. It reported the following error,
+Second, when I test the Theano with an example NN, it reported the following error,
 
 ```
 C:\Python27\libs/libpython27.a(dmmes00245.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_li
