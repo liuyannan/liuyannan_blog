@@ -29,7 +29,7 @@ I mainly followed the official tutorial [here](http://deeplearning.net/software/
 
 First, when I install the CUDA 5.5 on my computer. The driver installer said no CUDA supported device was detected. According to information from Internet, it seems 5.5 CUDA driver is too old and it maybe released before my CPU card. So I simply skip this.
 
-*NOTE: At the point I posted this blog, I haven finished testing the CUDA function. So CUDA maybe not fully workable.*
+*NOTE: At the point I posted this blog, I haven't finished testing the CUDA function. So CUDA maybe not fully workable.*
 
 Second, when I test the Theano with an example NN, it reported the following error,
 
